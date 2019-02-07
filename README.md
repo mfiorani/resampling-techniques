@@ -6,6 +6,6 @@ Testing various resampling techniques and R packages with the UCI ["default of c
 Read more about it [here](#)
 
 
--------------------------------------------------------------------------
+
 ![Data distribution](https://github.com/mfiorani/resampling-techniques/raw/master/img/distributions.png "Distributions of resampled datasets")
 
