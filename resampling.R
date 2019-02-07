@@ -10,6 +10,7 @@ library("ROSE")
 library("ggplot2")
 library("pROC")
 library("gridExtra")
+library("rpart.plot")
 
 ###### GETTING THE DATASET
 url <- "https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls"
@@ -171,3 +172,6 @@ do.call(grid.arrange, rocs)
 # SUMMARIZING RESULTS IN TABLE
 tbl <- summarise_results(results)
 tbl
+
+# PLOTTING THE SMOTE MODEL
+rpart.plot(model_smote, extra = "auto", under = T, box.palette = 0, type = 5)
