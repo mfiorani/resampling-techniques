@@ -1,6 +1,6 @@
 
-library("httr")
-library("readxl")
+library(httr)
+library(readxl)
 library("dplyr")
 library("caret")
 library("rpart")
@@ -12,10 +12,10 @@ library("pROC")
 library("gridExtra")
 
 ###### GETTING THE DATASET
-
+setwd("C://Users//matteo.fiorani//Desktop//UCI")
 url <- "https://archive.ics.uci.edu/ml/machine-learning-databases/00350/default%20of%20credit%20card%20clients.xls"
 GET(url, write_disk(tf <- tempfile(fileext = ".xls")))
-df <- read_excel(tf, na = "NA", skip = 1)
+df <- read_excel("data//default of credit card clients.xls", na = "NA", skip = 1)
 
 ###### FUNCTIONS
 collect_roc <- function(model, data_train, data_test) {
