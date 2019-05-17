@@ -2,6 +2,8 @@
 
 Testing various resampling techniques and R packages with the UCI ["default of credit card clients"](https://archive.ics.uci.edu/ml/datasets/default+of+credit+card+clients) dataset.
 
+For a more detailed explanation see [this page](https://www.dummyvars.xyz/post/resampling-techniques/).
+
 
 
 ![Data distribution](https://github.com/mfiorani/resampling-techniques/raw/master/img/distributions.png "Distributions of resampled datasets")
